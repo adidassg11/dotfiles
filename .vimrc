@@ -12,6 +12,7 @@ set ts=4
 set sts=4
 set expandtab
 set ruler
+set autoindent
 
 syntax on
 
