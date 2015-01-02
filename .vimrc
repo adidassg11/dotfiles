@@ -34,6 +34,9 @@ set so=8
 "use F4 key to show the taglist on the left
 map <F8> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
+"recursive search up the directories for tags
+set tags=tags;/
+
 "autocompletion
 "filetype plugin on
 "au FileType php setl ofu=phpcomplete#CompletePHP
