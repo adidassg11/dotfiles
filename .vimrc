@@ -29,10 +29,16 @@ set whichwrap+=<,>,h,l
 "vertical scroll before cursor reaches top or bottom
 set so=8
 
-"tags
+" = = = TAGS = = = 
 "http://amix.dk/blog/post/19329
 "use F4 key to show the taglist on the left
-map <F8> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+" this works fine on linux for c++  
+"map <F8> :!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+" need to remove the . for macs, maybe no dot is fine on linux too?
+map <F8> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q<CR>
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+
 
 "recursive search up the directories for tags
 set tags=tags;/
