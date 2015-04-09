@@ -1,6 +1,11 @@
 # 2.2) hardstatus = navigation bar @ bottom
 hardstatus alwayslastline "%H %-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"  
 
+# display current directory in status bar, works in OSX, untested elsewhere
+shell -$SHELL
+#shelltitle '] | bash'
+#caption always "%m/%d/%y %0c%{=b kg}  %l  %{=r gk}%-w%{=b wb}%50>%n%f* %t%{-}%+Lw%<%{- Wk}"
+
 # 2.3) Autoload two screen tabs for emacs/bash.
 #screen -t emacs 0
 #screen -t bash 1
