@@ -43,6 +43,19 @@ map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 "recursive search up the directories for tags
 set tags=tags;/
 
+"recursive search up the directories for cscope db
+"simply run 'pycscope -R' on your top level directory
+function! LoadCscope()
+  let db = findfile("cscope.out", ".;")
+  if (!empty(db))
+    let path = strpart(db, 0, match(db, "/cscope.out$"))
+    set nocscopeverbose " suppress 'duplicate connection' error
+    exe "cs add " . db . " " . path
+    set cscopeverbose
+  endif
+endfunction
+au BufEnter /* call LoadCscope()
+
 "autocompletion
 "filetype plugin on
 "au FileType php setl ofu=phpcomplete#CompletePHP
