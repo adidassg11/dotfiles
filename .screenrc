@@ -1,10 +1,14 @@
 # 2.2) hardstatus = navigation bar @ bottom
 hardstatus alwayslastline "%H %-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"  
 
-# display current directory in status bar, works in OSX, untested elsewhere
+# display current directory in status bar, i think this is specifically for iTerm2
 shell -$SHELL
+
+#i think this is the same but inferior to the solution above
+# display current directory in status bar, works in OSX, untested elsewhere
 #shelltitle '] | bash'
 #caption always "%m/%d/%y %0c%{=b kg}  %l  %{=r gk}%-w%{=b wb}%50>%n%f* %t%{-}%+Lw%<%{- Wk}"
+
 
 # 2.3) Autoload two screen tabs for emacs/bash.
 #screen -t emacs 0
