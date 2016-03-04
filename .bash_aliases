@@ -21,6 +21,8 @@ alias egrep='egrep --color=auto'
 
 alias ..='cd ..'
 
+alias weather="curl -4 http://wttr.in/sanfrancisco"
+
 git_add_modified() {
   for file in `git status | grep modified | awk '{ print $2 }'`
   do 
