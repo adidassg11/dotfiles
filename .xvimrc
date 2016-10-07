@@ -1,0 +1,6 @@
+" Xcode plugin for Vim keybindings
+" http://xvim.org/
+
+set expandtab
+set ignorecase
+set hlsearch
