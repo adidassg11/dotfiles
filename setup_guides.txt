@@ -1,0 +1,6 @@
+This repo is starting to be a go-to for whenever setting up a new dev environment. This file will be used as a list of resources beyond just dotfiles.
+
+Sublime 3 and Javascript:
+https://www.exratione.com/2014/01/setting-up-sublime-text-3-for-javascript-development/
+
+
