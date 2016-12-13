@@ -8,7 +8,9 @@ if [ -f ~/.bash_aliases ]; then
   source ~/.bash_aliases
 fi
 
-source /usr/local/bin/virtualenvwrapper.sh
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+  source /usr/local/bin/virtualenvwrapper.sh
+fi
 
 #instructions here for inserting git branch in the bash prompt: https://github.com/jimeh/git-aware-prompt
 #export GITAWAREPROMPT=~/.bash/git-aware-prompt
