@@ -5,7 +5,7 @@ fi
 
 # aliases
 if [ -f ~/.bash_aliases ]; then
-  source ~/.bash_aliaes
+  source ~/.bash_aliases
 fi
 
 source /usr/local/bin/virtualenvwrapper.sh
