@@ -1,5 +1,3 @@
-echo " BASH ALIASES"
-
 alias ls='ls -G'
 alias la='ls -A'
 alias l='ls -CF'
@@ -18,7 +16,6 @@ alias weather="curl -4 http://wttr.in/sanfrancisco"
 # Check for OSX/macOS
 if [ $(uname -s) == "Darwin" ]
 then
-    echo 'using mac'
     if [ ! -f /usr/local/bin/sublime -a -f /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ]; then
       ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/sublime
     fi
