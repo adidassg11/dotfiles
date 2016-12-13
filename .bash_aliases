@@ -13,22 +13,20 @@ then
     fi
 fi
 
-echo "print"
-
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
 alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 
 alias weather="curl -4 http://wttr.in/sanfrancisco"
 
-git_add_modified() {
-  for file in `git status | grep modified | awk '{ print $2 }'`
-  do 
-    git add $file
-  done
-}
+if [ -f /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl ]; then
+  ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/sublime
+fi
+
 
 mkdircdfunc() {
     #do things with parameters like $1 such as
