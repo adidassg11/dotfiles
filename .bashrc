@@ -1,10 +1,4 @@
-# some alias
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+# Nothing to see here...
 
-#more aliases
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
+# No need to call ~/.bash_aliases since that's done in ~/.bash_profile
 
